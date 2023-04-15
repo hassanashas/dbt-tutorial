@@ -1,0 +1,21 @@
+local_sqlite_project:
+  target: dev
+  outputs:
+    dev:
+      type: sqlite
+      threads: 1
+      database: 'database'
+      schema: 'main'
+      schemas_and_paths:
+        main: 'C:/Programming/Projects/dbt/target.db'
+      schema_directory: 'file_path'
+      #optional fields
+#     extensions:
+#       - "/path/to/sqlean/crypto.so"
+
+# Add a new connection for your source SQLite file
+  sources:
+    dev:
+      type: sqlite
+      database: 'C:/Programming/Projects/dbt/dbt-tutorial/tutorial_project/source/source.db'
+      schema: 'source'

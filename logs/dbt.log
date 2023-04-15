@@ -1,0 +1,57 @@
+
+
+============================== 2023-04-14 19:50:36.470833 | 77d2ff7c-09ee-4a9b-91f5-cf639d938c02 ==============================
+[0m19:50:36.470833 [info ] [MainThread]: Running with dbt=1.4.5
+[0m19:50:36.477496 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\LENOVO\\.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'project_name': 'dbt-tutorial', 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+[0m19:50:36.478495 [debug] [MainThread]: Tracking: tracking
+[0m19:50:36.528457 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FBB10D71F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FBB1155120>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FBB1156680>]}
+[0m19:50:36.529764 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\LENOVO\.dbt
+[0m19:50:45.743838 [debug] [MainThread]: Starter project path: C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\dbt\include\starter_project
+[0m21:02:30.326127 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FBB1139A50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FBB1139DB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FBB1139BA0>]}
+[0m21:02:30.326127 [debug] [MainThread]: Flushing usage events
+[0m21:02:31.281510 [error] [MainThread]: Encountered an error:
+
+[0m21:02:31.315534 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\dbt\main.py", line 136, in main
+    results, succeeded = handle_and_check(args)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\dbt\main.py", line 206, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\dbt\main.py", line 253, in run_from_args
+    results = task.run()
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\dbt\task\init.py", line 304, in run
+    adapter = self.ask_for_adapter_choice()
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\dbt\task\init.py", line 230, in ask_for_adapter_choice
+    numeric_choice = click.prompt(prompt_msg, type=click.INT)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\click\termui.py", line 166, in prompt
+    value = prompt_func(prompt)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\click\termui.py", line 149, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+
+
+============================== 2023-04-14 21:11:53.158786 | 4afaced2-2c30-4a79-9f4a-5451d16b0bcb ==============================
+[0m21:11:53.158786 [info ] [MainThread]: Running with dbt=1.4.5
+[0m21:11:53.158786 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\LENOVO\\.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'project_name': 'tutorial_project', 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+[0m21:11:53.158786 [debug] [MainThread]: Tracking: tracking
+[0m21:11:53.190061 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D6B6FB7F40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D6B7035450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D6B7037610>]}
+[0m21:11:53.190061 [debug] [MainThread]: Starter project path: C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\dbt\include\starter_project
+[0m21:11:57.423410 [info ] [MainThread]: Profile tutorial_project written to C:\Users\LENOVO\.dbt\profiles.yml using target's sample configuration. Once updated, you'll be able to start developing with dbt.
+[0m21:11:57.423410 [info ] [MainThread]: 
+Your new dbt project "tutorial_project" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m21:11:57.439030 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D6B6FB7A00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D6B7037610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D6B7034C40>]}
+[0m21:11:57.439030 [debug] [MainThread]: Flushing usage events
